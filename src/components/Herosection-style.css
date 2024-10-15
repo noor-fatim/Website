@@ -1,0 +1,156 @@
+.hero-section{
+    min-height: 700px;
+    background-color: #F3FBFB;
+    margin-top: 5rem;
+    display: flex;
+    overflow-x: hidden;
+}
+.left-side{
+    width: 50%;
+    margin: 3rem;
+    padding-top: 3rem;
+}
+.hero-section-title span{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #00CCC5;
+
+}
+.hero-section-label{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    color: #113B55;
+}
+.hero-section-desc{
+    margin-top:1.5rem;
+}
+.hero-section-desc p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* right-side css */
+
+.right-side{
+    width: 50%;
+    margin: 4rem;
+    padding-top: 3rem;
+}
+.right-side-img {
+    width: 300px;  
+    height: 600px; 
+    background-image: url('../assets/Right-side.png'); 
+    background-size: cover; 
+    background-position: right center; 
+    position: relative; 
+    left: 60%;    
+  }
+  
+  .rightfront-image {
+    position: absolute; 
+    top: 50%; 
+    transform: translate(-70%, -50%); 
+    width: 600px; 
+    height: auto;
+  }
+
+
+  /* media queries */
+  @media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side {
+        width: 80%;
+        margin: 2rem 0;
+    }
+
+    .right-side {
+        width: 80%;
+        margin: 2rem 0;
+    }
+
+    .right-side-img {
+        left: 50%;  
+        width: 200px;
+        height: 400px;
+    }
+
+    .rightfront-image {
+        width: 400px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .hero-section-title span {
+        font-size: 1rem;
+    }
+
+    .hero-section-label {
+        font-size: 1.6rem;
+    }
+
+    .hero-section-desc p {
+        font-size: 1rem;
+    }
+
+    .right-side-img {
+        width: 150px;
+        height: 300px;
+    }
+
+    .rightfront-image {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .hero-section-title span {
+        font-size: 0.9rem;
+    }
+
+    .hero-section-label {
+        font-size: 1.4rem;
+    }
+
+    .hero-section-desc p {
+        font-size: 0.9rem;
+    }
+
+    .right-side-img {
+        width: 100px;
+        height: 200px;
+        left: 50%;
+    }
+
+    .rightfront-image {
+        width: 250px;
+        transform: translate(-50%, -50%);
+    }
+}
+  

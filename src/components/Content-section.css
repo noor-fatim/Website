@@ -1,0 +1,119 @@
+.content-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+   padding-top: 6rem;
+   gap: 2rem;
+}
+.content-title{
+    width: 80%;
+    margin-top: 3rem;
+}
+.content-title h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.content-title h1 span{
+    background: #42a1e0;
+    background: linear-gradient(to right, #db3582 0%, #7a31c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content-desc{
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.content-desc p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.buttons{
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.social-btn{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(211, 206, 206);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #db3582 0%, #7a31c7 100%);
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    font-weight: 600;
+    box-shadow: 5px 5px 30px  #db3582;
+}
+.social-btn2{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(211, 206, 206);
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 600;
+}
+
+
+
+/* media queries */
+@media (max-width: 1024px) {
+    .content-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .content-desc p {
+        font-size: 1.2rem;
+    }
+
+    .social-btn, .social-btn2 {
+        width: 180px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-title h1 {
+        font-size: 2rem;
+    }
+
+    .content-desc p {
+        font-size: 1.1rem;
+    }
+
+    .social-btn, .social-btn2 {
+        width: 160px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-title {
+        width: 90%;
+    }
+
+    .content-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .content-desc p {
+        font-size: 1rem;
+    }
+
+    .social-btn, .social-btn2 {
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}
